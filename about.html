@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html>
+    <head>
+    <!-- this is the proper meta tag to use common special characters, etc. -->
+    <meta charset="UTF-8" />
+
+    <!-- this is necessary for responsive @media queries to work properly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The Title to your website. Shows in the browser tab or window, as well as in search engine results. Not actually on the page anywhere -->
+    <title>Hyejin's Portfolio</title>
+
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" type="text/css" rel="stylesheet" />
+      <!-- font-awesome has icons as fonts, and it is easy to change colors-->
+    <link href="basics.css" type="text/css" rel="stylesheet" />
+    <link href="floatGrid.css" type="text/css" rel="stylesheet" />
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+    <link href="globalmenu.css" type="text/css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+    <header class="flex">
+         <h2 class="name"><a href="index.html">HYEJIN AHN</a></h2>
+        <nav>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+          <ul>
+                <li><a href="home.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            </nav>
+        
+       
+    </header>
+        
+    <main class="flex">
+        <div class="flex-wrap" style="display:flex;">
+            <div class="skinny photo column five offset-by-one">
+                <img src="profile.JPG" alt="Profile Photo"> 
+            </div>
+            
+            
+            <div class="skinny column five">
+                <h2>HELLO!</h2>
+
+                <p>I am currently studying graphic design in Maryland Institute College of Art in Baltimore, Maryland. I am  exploring different areas of the field by incorporating various skills such as photography, illustrations, basic coding, and others.</p>
+            </div>
+        </div>
+       
+        
+    </main>
+        
+     <footer>
+        <div class="offset-by-five footer-flex">
+        <a href="https://mica.ccnsite.com/hyejin21"><img src="behance.png" class="icon"></a>
+        <a href="https://www.linkedin.com/in/hyejin21/"><img src="linkedin.png" class="icon"></a>
+        <a href="https://www.instagram.com/hyejin21/"><img src="instagram.png" class="icon"></a>
+        </div>
+         
+        <div class="footer-flex">
+        <p>© copyright <span class="year dynamic">2017</span> HYEJIN AHN</p>
+        </div>
+         
+        
+        
+    </footer>
+        
+        
+         <script src="jquery-3.2.0.min.js"></script>
+    
+    <script>
+        
+        //this makes menu hide/show when you click hamburger button//
+    
+        $(".hamburger").click(function() {
+             $("header nav ul").toggle();
+            
+        });  
+        
+        //this fixes that manu sometimes stays hidden
+        
+         $(window).on("load resize", function() {
+            var windowWidth = $(window).width();
+            if ( windowWidth >=800){
+                    $("header nav ul").show();
+            }else{
+                $("header nav ul").hide();
+            }
+                
+        });
+        
+           
+       
+    </script>
+</body>
+</html>

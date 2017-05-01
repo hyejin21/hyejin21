@@ -1,0 +1,73 @@
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+
+
+}
+
+
+/** This example is for a 12 column grid **/
+@media (min-width: 800px) {
+.column,
+.columns{
+    float:left;
+    padding-left:.10rem;
+    padding-right:3rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+
+.group,
+.grouped {
+    padding:3rem;
+    border:0px solid;
+}
+
+.group::after,
+.grouped::after{
+    content:'';
+    display:table;
+    clear:both;   
+}   
+
+
+
+/** Create different widths of clumns **/
+.one    {width: calc(100% / 12 * 01); background-color:red;}
+.two    {width: calc(100% / 12 * 02); background-color:transparent;}
+.three  {width: calc(100% / 12 * 03); background-color:transparent;}
+.four   {width: calc(100% / 12 * 04); background-color:transparent}
+.five   {width: calc(100% / 12 * 05); background-color:transparent;}
+.six    {width: calc(100% / 12 * 06); background-color:lightgoldenrodyellow;}
+.seven  {width: calc(100% / 12 * 07); background-color:pink;}
+.eight  {width: calc(100% / 12 * 08); background-color:lightgreen;}
+.nine   {width: calc(100% / 12 * 09); background-color:transparent;}
+.ten    {width: calc(100% / 12 * 10); background-color:lavender;}
+.eleven {width: calc(100% / 12 * 11); background-color:lightpink;}
+.twelve {width: calc(100% / 12 * 12); background-color:black;}
+
+
+.offset-by-one    {margin-left: calc(100% / 12 * 01);}
+.offset-by-two    {margin-left: calc(100% / 12 * 02);}
+.offset-by-three  {margin-left: calc(100% / 12 * 03);}
+.offset-by-four   {margin-left: calc(100% / 12 * 04);}
+.offset-by-five   {margin-left: calc(100% / 12 * 05);}
+.offset-by-six    {margin-left: calc(100% / 12 * 06);}
+.offset-by-seven  {margin-left: calc(100% / 12 * 07);}
+.offset-by-eight  {margin-left: calc(100% / 12 * 08);}
+.offset-by-nine   {margin-left: calc(100% / 12 * 09);}
+.offset-by-ten    {margin-left: calc(100% / 12 * 10);}
+.offset-by-eleven {margin-left: calc(100% / 12 * 11);}
+.offset-by-twelve {margin-left: calc(100% / 12 * 12);}
+}
+
+
+.project:nth-child(3n+1) {
+    clear:left; 
+    
+}
