@@ -121,11 +121,12 @@ header.flex{
     flex-wrap:wrap;
 }
 
-footer-flex{
+.footer-flex{
     margin-top:5em;
     position:relative;
     justify-content:center;
     flex-wrap:wrap;
+    text-align: center;
    
 }
 
